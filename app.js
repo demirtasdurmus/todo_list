@@ -12,7 +12,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-durmus:test1234@cluster0.ibsk4.mongodb.net/todolistDB", {
+
+mongoose.connect("mongodb://localhost:27017/todolistDB", {
   useNewUrlParser: true
 
 });
